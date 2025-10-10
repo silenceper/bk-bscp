@@ -8,6 +8,12 @@
 
 ## 接口列表
 
+### auth
+
+| Method  | URI     | Name   | Summary |
+|---------|---------|--------|---------|
+| GET | /api/v1/auth/user/space | [list_user_space](#list-user-space) | 获取用户空间列表 |
+
 ### config
 
 | Method  | URI     | Name   | Summary |
@@ -594,6 +600,32 @@ Content-Type: application/json
     "sha256": ""
   }
 }
+```
+
+### <span id="list-user-space"></span> 获取用户空间列表 (*list_user_space*)
+
+```
+GET /api/v1/auth/user/space
+```
+
+#### 输出参数
+
+| 参数名称 | 类型 | 描述 |
+|------|--------|---------|
+
+#### 输入示例
+
+```bash
+GET /api/v1/auth/user/space HTTP/1.1
+Content-Type: application/json
+
+
+```
+
+#### 输出示例
+
+```json
+{}
 ```
 
 ### <span id="upload-content"></span> 上传文件内容 (*upload_content*)

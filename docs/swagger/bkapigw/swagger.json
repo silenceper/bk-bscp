@@ -12,6 +12,29 @@
     "version": "version not set"
   },
   "paths": {
+    "/api/v1/auth/user/space": {
+      "get": {
+        "consumes": [
+          "text/plain"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "auth"
+        ],
+        "summary": "获取用户空间列表",
+        "operationId": "list_user_space",
+        "responses": {
+          "200": {
+            "description": "desc",
+            "schema": {
+              "$ref": "#/definitions/rest.OKResponse"
+            }
+          }
+        }
+      }
+    },
     "/api/v1/biz/{biz_id}/content/download": {
       "get": {
         "consumes": [
